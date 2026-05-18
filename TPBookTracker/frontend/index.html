@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+
+  <h1 class="text-3xl font-bold mb-6">📚 Book Tracker</h1>
+  <p id="errorBox" class="text-red-500 mb-4 min-h-[20px]"></p>  
+  <!-- FORM -->
+  <div class="bg-white p-4 rounded shadow mb-6">
+    <h2 class="text-xl font-semibold mb-4">Add Book</h2>
+
+    <form id="bookForm" class="grid grid-cols-2 gap-3">
+
+      <input name="title" placeholder="Title" class="border p-2 rounded" />
+      <input name="author" placeholder="Author" class="border p-2 rounded" />
+
+      <input name="pages" type="number" placeholder="Pages" class="border p-2 rounded" />
+      <input name="pagesRead" type="number" placeholder="Pages Read" class="border p-2 rounded" />
+
+      <input name="price" type="number" placeholder="Price" class="border p-2 rounded" />
+      <input name="suggestedBy" placeholder="Suggested By" class="border p-2 rounded" />
+
+      <!-- STATUS -->
+      <select name="status" class="border p-2 rounded">
+        <option>Read</option>
+        <option>Re-read</option>
+        <option>DNF</option>
+        <option>Currently reading</option>
+        <option>Returned Unread</option>
+        <option>Want to read</option>
+      </select>
+
+      <!-- FORMAT -->
+      <select name="format" class="border p-2 rounded">
+        <option>Print</option>
+        <option>PDF</option>
+        <option>Ebook</option>
+        <option>AudioBook</option>
+      </select>
+
+      <button class="col-span-2 bg-blue-500 text-white p-2 rounded">
+        Add Book
+      </button>
+
+    </form>
+  </div>
+
+  <!-- STATS -->
+  <div class="bg-white p-4 rounded shadow mb-6">
+    <h2 class="text-xl font-semibold">Stats</h2>
+    <p id="stats">Loading...</p>
+  </div>
+
+  <!-- LIST -->
+  <div id="books" class="grid gap-4"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

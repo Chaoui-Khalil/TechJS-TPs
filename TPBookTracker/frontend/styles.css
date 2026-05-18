@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #111827;
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* INPUTS */
+input, select {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* BUTTON */
+button {
+  background: #2563eb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* BOOK CARD */
+.book {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  width: 100%;
+  background: #e5e7eb;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 10px;
+  background: #22c55e;
+  border-radius: 5px;
+}
